@@ -1,5 +1,5 @@
 <script>
-function myFunction() {
+function sortByZIP() {
   // Declare variables 
   var input, filter, zipfilter, tr, td, i;
   input = document.getElementById("ZIP");
@@ -7,6 +7,10 @@ function myFunction() {
   zipfilter = document.getElementById("ZIP");
   
 
+	
+	
+	
+	
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
 	td = tr[i].getElementsByTagName("ZIP")[0];
@@ -19,4 +23,19 @@ function myFunction() {
     } 
   }
 }
+
+function removezipfilter(){
+	
+	
+	
+}
+
+function removejobfilter(){
+}
+
+function removeeducationfilter(){
+}
+
+
+
 </script>
