@@ -1,49 +1,87 @@
 
-	<html>
-		<header>
-			<title>Former Felon Help</title>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-     			 rel="stylesheet">
+<html>
+<header>
+	<title>Former Felon Help</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
 
-		</header>
-		<body>
-			<div class="header-bar">
-				<h1>Former Felon Help</h1> 
-			</div>
+</header>
+<body>
+	<div class="header-bar">
+		<h1 id="title">Former Felon Help</h1> 
+	</div>
+	<table class="filter-bar" style="width:100%;height:10px">
+		<tr>
+			<td> 
+				<table style="width:7%;height:100%">
+					<td>
+						<form action="/action_page.php">
+							<input class="ZIP" type="search" pattern="[0-9]{5}" placeholder="ZIP Code" maxlength="5" />
+						</form>
+					</td>
+					<td>
+						<button class="removebutton" onclick="removezipfilter()">
+							<i class="remove-filter-button material-icons"> clear </i>
+						</button>    
+					</td>
+				</td>
+			</table>
+			<td>
 
-<form action="/action_page.php">
-<input class="ZIP" type="search" pattern="[0-9]{5}" placeholder="ZIP Code" maxlength="5" />
-</form>
-<button onclick="removezipfilter()">
-			<i class="remove-filter-button material-icons"> clear </i>
-      </button>    
-<span class="drop-down button">
-	<select>
-		<option value="job_type">Job Type</option>
-		<option value="construction">Construction</option>
-		<option value="customer_services">Customer Services</option>
-		<option value="food_services">Food Services</option>
-		<option value="maintenance">Maintenance/Janitorial</option>
-<option value="manufacturing">Manufacturing</option>
-<option value="office_work">Office Work</option>
-<option value="online">Online Employment</option>
-<option value="transportation">Transportation</option>
-</select>
-</span>
-      <button onclick="removejobfilter()">
-			<i class="remove-filter-button material-icons"> clear </i>
-        </button>
-<div class="drop-down button">
-<select>
-		<option value="education">Education</option>
-		<option value="option_1">Some High School</option>
-		<option value="option_2">High School Diploma</option>
-		<option value="option_3">College Degree</option>
-</select>
 
-</div>
-      <button onclick="removezipfilter()">
-			<i class="remove-filter-button material-icons"> clear </i>
-      </button>
-		</body>
-	</html>
+
+
+				<table style="width:7%;height:100%">
+					<td>
+
+
+						<span class="drop-down">
+							<select>
+								<option value="job_type">Job Type</option>
+								<option value="construction">Construction</option>
+								<option value="customer_services">Customer Services</option>
+								<option value="food_services">Food Services</option>
+								<option value="maintenance">Maintenance/Janitorial</option>
+								<option value="manufacturing">Manufacturing</option>
+								<option value="office_work">Office Work</option>
+								<option value="online">Online Employment</option>
+								<option value="transportation">Transportation</option>
+							</select>
+						</span>
+					</td>
+					<td>
+						<button class="removebutton" onclick="removejobfilter()">
+							<i class="remove-filter-button material-icons"> clear </i>
+						</button>
+					</td>
+
+				</table>
+			</td>
+			<td>
+
+
+
+				<table style="width:7%;height:100%">
+					<td>
+						<div class="drop-down">
+							<select>
+								<option value="education">Education</option>
+								<option value="option_1">Some High School</option>
+								<option value="option_2">High School Diploma</option>
+								<option value="option_3">College Degree</option>
+							</select>
+
+						</div>
+					</td>
+					<td>
+						<button class="removebutton" onclick="removeeducationfilter()">
+							<i class="remove-filter-button material-icons"> clear </i>
+
+						</button>
+					</td>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
