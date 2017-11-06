@@ -4,7 +4,25 @@ html {
   background-size: cover;
 }
 
+.header-bar {
+  height: 100px;
+  width: 100%;
+  background-color: #273043;
+  color: white;
+  font-family: Arial;
+  display: table;
 
+}
+
+#title {
+  margin: 0px;
+  padding: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  left: 40px;
+  font-size: 25;
+}
 
 .drop-down {
   position: relative;
