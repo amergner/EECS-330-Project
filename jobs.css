@@ -1,18 +1,59 @@
+
+
 html {
-	background: #BFDFFF; /* for browsers that do not support gradients */
-	background: linear-gradient(rgba(191, 223, 255,1), rgba(86, 181, 221,1)) no-repeat center center fixed; /*Standard*/
+  background: #BFDFFF; /* for browsers that do not support gradients */
+  background: linear-gradient(rgba(191, 223, 255,1), rgba(86, 181, 221,1)) no-repeat center center fixed; /*Standard*/
   background-size: cover;
+
 }
 
-button{
-  background-color:
+.header-bar {
+  height: 100px;
+  width: 100%;
+  /*background-color: #273043;*/
+  color: white;
+  display: table;
+  margin-bottom:20px;
+  background: #1B2845;
+  border-style:solid;
+  border-width:5px;
+  border-color:#335C81;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  margin: 0px;
+  padding: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  left: 40px;
+  font-size: 40px;
+  font-family: Century;
+}
+
+.removebutton{
+  border-radius: 3px;
+  padding: 5px px;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
 }
 
 .drop-down {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: 10px; /* demo only */
+  font-family: "Open Sans" Sans-serif;
+}
+
+.filter-bar{
+  font-family: Avenir;
 }
 
 .drop-down select {
@@ -20,13 +61,14 @@ button{
   color: black;
   font-size: inherit;
   padding: .5em;
-  padding-right: 2.5em;	
+  padding-right: 2.5em; 
   border: 0;
   margin: 0;
   border-radius: 2.5px;
   text-indent: 0.01px;
   text-overflow: '';
   -webkit-appearance: button; 
+  
 }
 
 .drop-down::after {
@@ -52,5 +94,71 @@ button{
   top: 0;
   bottom: 0;
   border-radius: 0 3px 3px 0;
+    height: 35px;
+  width: 210px;
+
+}
+
+.ZIP {
+  height: 35px;
+  width: 210px;
+  font-size: inherit;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+
+
+.job{
+  
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  width:80%;
+  margin: auto;
+  margin-top:30px;
+  background-color:white;
+  border-style:solid;
+  border-width:5px;
+  border-color:#335C81;
+  font-family: "Verdana";
+  /*display: none;*/
+}
+.Title{
+  font-size:30px;
+}
+.Description{
+  
+  font-size:20px;
+  margin-bottom:20px;
+
+}
+.Location{
+  font-style: italic;
+  font-size:14px;
+}
+.Education{
+  font-size:14px;
 }
 
