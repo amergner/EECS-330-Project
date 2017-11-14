@@ -1,4 +1,3 @@
-
 var jobTypeSelect = document.getElementById("jobTypeSelect");
 var educationTypeSelect = document.getElementById("educationTypeSelect");
 
@@ -49,13 +48,3 @@ function revertJobAll() {
   document.getElementById("jobTypeSelect").value = "job_type";
   document.getElementById("educationTypeSelect").value = "education";
 }
-
-
-
-
-
-
-
-
-
-
