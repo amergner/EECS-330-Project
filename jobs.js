@@ -1,100 +1,157 @@
 
-function sortByZIP() {
-  // Declare variables 
-  var input, filter, zipfilter, tr, td, i, edFilter;
-  input = document.getElementById("ZIP");
-  filter = input.value();
-  zipfilter = document.getElementById("ZIP");
 
-  
-  
-  
-  
-  // Loop through all table rows, and hide those who don't match the search query 
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("ZIP")[0];
-  } if (td) {
-    if (td.innerHTML.indexOf(filter) > -1) {
-      tr[i].style.display = "";
-    } else {
-      tr[i].style.display = "none";
-    }
-  }
-}
 
 var jobTypeSelect = document.getElementById("jobTypeSelect");
+var educationTypeSelect = document.getElementById("educationTypeSelect");
 
-jobTypeSelect.onchange = function() {
+var jobs = document.getElementsByClassName('job');
+var constructionjobs = document.getElementsByClassName("Construction");
+var manufacturingjobs = document.getElementsByClassName("Manufacturing");
+var transportationjobs = document.getElementsByClassName("Transportation");
+var customerservicejobs = document.getElementsByClassName("CustomerServices");
+var foodservicesjobs = document.getElementsByClassName("FoodServices");
+var maintenancejobs = document.getElementsByClassName("Maintenance");
+var officeworkjobs = document.getElementsByClassName("OfficeWork");
+var onlineemploymentjobs = document.getElementsByClassName("OnlineEmployment");
+
+
+var highschooljobs=document.getElementsByClassName("Highschool");
+var diplomajobs=document.getElementsByClassName("Diploma");
+var collegejobs=document.getElementsByClassName("College");
+
+jobTypeSelect.onchange = function jobFilter() {
   if (jobTypeSelect.value === "job_type") {
-  revertJobType();
+    revertJobType();
+    educationFilter();
   }
   else if (jobTypeSelect.value === "construction") {
     removeJobFilter();
-    document.getElementById("Construction").style.display="block";
+    for (var i = 0; i < constructionjobs.length; i++) {
+      constructionjobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "manufacturing") {
     removeJobFilter();
-    document.getElementById("Manufacturing").style.display="block";
+    for (var i = 0; i < manufacturingjobs.length; i++) {
+      manufacturingjobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "transportation") {
     removeJobFilter();
-    document.getElementById("Transportation").style.display="block";
+    for (var i = 0; i < transportationjobs.length; i++) {
+      transportationjobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "customer_services") {
     removeJobFilter();
-    document.getElementById("CustomerServices").style.display="block";
+    for (var i = 0; i < customerservicejobs.length; i++) {
+      customerservicejobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "food_services") {
     removeJobFilter();
-    document.getElementById("FoodServices").style.display="block";
+    for (var i = 0; i < foodservicesjobs.length; i++) {
+      foodservicesjobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "maintenance") {
     removeJobFilter();
-    document.getElementById("Maintenance").style.display="block";
+    for (var i = 0; i < maintenancejobs.length; i++) {
+      maintenancejobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "office_work") {
     removeJobFilter();
-    document.getElementById("OfficeWork").style.display="block";
+    for (var i = 0; i < officeworkjobs.length; i++) {
+      officeworkjobs[i].style.display="block";
+    }
+    educationFilter();
   }
   else if (jobTypeSelect.value === "online") {
     removeJobFilter();
-    document.getElementById("OnlineEmployment").style.display="block";
+    for (var i = 0; i < onlineemploymentjobs.length; i++) {
+      onlineemploymentjobs[i].style.display="block";
+    }
+    educationFilter();
+  }
+}
+
+function revertJobType() {
+  for (var i = 0; i < jobs.length; i++) {
+    jobs[i].style.display="block";
+  }
+  document.getElementById("jobTypeSelect").value = "job_type";
+}
+function removeJobFilter(){
+  for (var i = 0; i < jobs.length; i++) {
+    jobs[i].style.display="none";
   }
 }
 
 
 
-function removeZipFilter(){
-  document.getElementById("zip-input").value = "";
+
+
+educationTypeSelect.onchange = function educationFilter() {
+  if (educationTypeSelect.value === "education") {
+    revertEducationType();
+    jobFilter();
+  }
+  else if (educationTypeSelect.value === "highschool") {
+    removeEducationFilter();
+    for (var i = 0; i < highschooljobs.length; i++) {
+      highschooljobs[i].style.display="block";
+    }
+    jobFilter();
+  }
+  else if (educationTypeSelect.value === "diploma") {
+    removeEducationFilter();
+    for (var i = 0; i < diplomajobs.length; i++) {
+      diplomajobs[i].style.display="block";
+    }
+    jobFilter();
+  }
+  else if (educationTypeSelect.value === "college") {
+    removeEducationFilter();
+    for (var i = 0; i < collegejobs.length; i++) {
+      collegejobs[i].style.display="block";
+    }
+    jobFilter();
+  }
 }
-
-function removeJobFilter(){
-  document.getElementById("Construction").style.display="none";
-  document.getElementById("CustomerServices").style.display="none";
-  document.getElementById("FoodServices").style.display="none";
-  document.getElementById("Maintenance").style.display="none";
-  document.getElementById("Manufacturing").style.display="none";
-  document.getElementById("OfficeWork").style.display="none";
-  document.getElementById("OnlineEmployment").style.display="none";
-  document.getElementById("Transportation").style.display="none";
-}
-
-
-function revertJobType() {
-  document.getElementById("Construction").style.display="block";
-  document.getElementById("CustomerServices").style.display="block";
-  document.getElementById("FoodServices").style.display="block";
-  document.getElementById("Maintenance").style.display="block";
-  document.getElementById("Manufacturing").style.display="block";
-  document.getElementById("OfficeWork").style.display="block";
-  document.getElementById("OnlineEmployment").style.display="block";
-  document.getElementById("Transportation").style.display="block";
-  document.getElementById("jobTypeSelect").value = "job_type";
-}
-
 
 
 
 function removeEducationFilter() {
+  for (var i = 0; i < jobs.length; i++) {
+    jobs[i].style.display="none";
+  }
+}
+
+function removeEducationType(){
+for (var i = 0; i < jobs.length; i++) {
+    jobs[i].style.display="block";
+  }
   document.getElementById("education-select").value = "education";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
