@@ -13,7 +13,7 @@ background-image:url(light_grey.png);
   background: none !important;
     color: inherit;
     border: none;
-    padding-top: 20px;
+    padding-top: 0px;
     font: inherit;
     cursor: pointer;
     outline: inherit !important;
@@ -25,23 +25,28 @@ background-image:url(light_grey.png);
   position: fixed;
   top: 0px;
   background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
 .header-bar {
-  height: 100px;
+  height: 70px;
   width: 100%;
   /*background-color: #273043;*/
-  color: white;
+  color: #1B2845;
   display: table;
   margin: 0px auto;
-  background: #1B2845;
+  /*background: #1B2845;*/
+  background-image:url(headerchoice.png);
   border-style:solid;
-  border-width:5px;
-  border-color:#335C81;
+  border-width:1px;
+  border-color:black;
+  /*border-color:#335C81;*/
 }
 
 .spacing {
-  height: 200px;
+  height: 135px;
 }
 
 body {
@@ -58,6 +63,7 @@ body {
   left: 40px;
   font-size: 40px;
   font-family: Century;
+  line-height: 70px;
 }
 
 .removebutton{
@@ -70,6 +76,8 @@ body {
   text-decoration: none;
   position: relative;
   display: inline-block;
+  border-radius: 5px;
+  height: 35px;
 }
 
 .drop-down {
@@ -78,13 +86,12 @@ body {
   vertical-align: middle;
   font-family: "Open Sans" Sans-serif;
 }
-
+/*
 .filter-bar{
   background-color: black;
-}
+}*/
 .filters{
   font-family: Avenir;
-  background-color: black;
 }
 
 .drop-down select {
@@ -138,6 +145,7 @@ body {
   font-size: inherit;
   border-width: 1px;
   border-color:lightgray;
+  border-radius: 4px;
 }
 
 #myUL {
