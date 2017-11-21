@@ -1,0 +1,67 @@
+html {
+background-color:#2191FB;
+}
+
+#titlelanding{
+float: left;
+text-align: center;
+font-family: 'Kameron', sans-serif;
+font-weight: 400;
+color: #E7E6F7;
+font-size: 55px;
+height: 80%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+#slogan{
+float: left;
+text-align: center;
+font-family: 'Source Sans Pro', sans-serif;
+color: #D4D8DD;
+height: 95%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-style:italic;
+}
+
+.buttonlanding {
+  float: left;
+  font-family: 'Source Sans Pro';
+  background-color: #E7E6F7;
+  border: solid;
+  border-width: 0px;
+  color: #2191FB;
+  height:35px;
+  width:150px;
+  margin:16px;
+  /*padding: 7px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 50px;
+
+}
+
+.buttonlanding:hover {
+    background-color: #D4D8DD; /* Green */
+    /*color: #E7E6F7;*/
+}
+
+#buttoncontainer{
+  height: 120%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,84 @@
+html {
+background-color:#2191FB;
+}
+
+
+
+.taskdescription{
+/*  float: left;
+text-align: center;
+font-family: 'Kameron', sans-serif;
+font-weight: 400;
+color: #E7E6F7;
+font-size: 55px;
+height: 80%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  */
+
+float: left;
+text-align: center;
+font-family: 'Kameron', sans-serif;
+font-weight: 400;
+color: #E7E6F7;
+font-size: 55px;
+height: 80%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+.ZIP {
+  /*
+  height: 35px;
+  width: 210px;
+  font-size: inherit;
+  border-width: 1px;
+  border-color:lightgray;
+  border-radius: 4px;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: fixed;
+  */
+
+float: left;
+  font-family: 'Source Sans Pro';
+  background-color: #E7E6F7;
+  border: solid;
+  border-width: 0px;
+  color: #2191FB;
+  height:35px;
+  width:150px;
+  margin:16px;
+  /*padding: 7px 32px;*/
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: none;
+  box-shadow: none;
+  border-radius: 50px;
+  margin: auto;
+}
+
+
+
+#buttoncontainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}

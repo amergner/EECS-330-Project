@@ -1,0 +1,129 @@
+html {
+background-color:#F6F6F6;
+}
+
+.spacing {
+  height: 100px;
+}
+
+.homebutton{
+  background: none !important;
+    color: inherit;
+    border: none;
+    padding-top: 0px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    display:inline-block;
+}
+
+.navbuttons{
+    margin: 0px;
+  padding: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  left: 40px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  line-height: 70px;
+  color: #C8F0FF;
+}
+
+.header-bar-cont {
+  width:100%;
+  position: fixed;
+  top: 0px;
+  background-color: #F6F6F6;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header-bar {
+  height: 70px;
+  width: 100%;
+  background-color:  #2191FB;
+  color:#F6F6F6;
+  display: table;
+  margin: 0px auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.title {
+  margin: 0px;
+  padding: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  left: 40px;
+  font-size: 40px;
+  font-family: 'Kameron', sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  line-height: 70px;
+  color: #C8F0FF;/*#DFEFF0;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+/*.box{
+	padding-top:10px;
+  padding-bottom:10px;
+  width:40%;
+  margin: auto;
+  margin-top:15px;
+  margin-bottom: 15px;
+  background-color:white;
+  
+  font-family: "Open Sans";
+  display: inline-block;
+  margin-left:5%;
+}
+*/
+.box-container{
+	margin-left:10%;
+  margin-right:10%;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.resourcetitle{
+	margin:5%;
+	margin-top: 10px;
+	/*font-family: "bitter";*/
+	font-size: 30px;
+	font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description{
+  margin-left:7%;
+  font-size: 20px;
+
+
+}
+
+.link{
+ margin-left:7%;
+color:#2191FB;
+font-size: 15px;
+
+}
+
+.resources{
+border-style: solid;
+  border-width: 0px 0px 3px 0px;
+  border-color: #C8F0FF; 
+  padding-bottom: 2.5%;
+}
