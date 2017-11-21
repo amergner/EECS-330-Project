@@ -2,157 +2,32 @@
 <html>
 
 <head>
-  <title>Former Felon Help</title>
+  <title>New Beginnings</title>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="jobs.css">
+  <link rel="stylesheet" type="text/css" href="landingpage.css">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Kameron' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-  <script src="jobs.js"> </script>
-
-<div class="header-bar-cont">
-  <div class="header-bar">
-    <button class="homebutton" onclick="revertJobAll()">
-      <h1 id="title">Former Felon Help</h1> 
-    </button>
+  <div id='content'>
+    <h1 id="titlelanding"> New Beginnings</h1>
+    <h2 id="slogan"> connecting former inmates with the tools they need</h2>
+    <div id='buttoncontainer'>
+      <a href="jobslandingpage.html">
+        <button class="buttonlanding">Find Jobs</button>
+      </a>
+      <a href="resourcespage.html">
+      <button class="buttonlanding">Other Resources</button>
+    </a>
+    </div>
   </div>
-  <!--<table class="filter-bar" style="width:100%; height: 10px;">-->
-    <table class="filters" align="center" style="width:75%;height:100%">
-      <tr>
-        <td> 
-          <table align="center" style="width:7%;height:100%">
-            <td>
-              <form action="/action_page.php">
-                <input id="zip-input" class="ZIP" type="search" pattern="[0-9]{5}" placeholder="ZIP Code" maxlength="5" />
-              </form>
-            </td>
-            <td>
-              <button class="removebutton" onclick="removeZipFilter()">
-                <i class="remove-filter-button material-icons"> clear </i>
-              </button>    
-            </td>          
-          </table>
-        </td>
-        <td>
-          <table align="center" style="width:7%;height:100%">
-            <td>
-              <span class="drop-down">
-                <select id="jobTypeSelect" name="job-list" size="1" onclick="findJob()">
-                  <option value="job_type">Job Type</option>
-                  <option value="construction">Construction</option>
-                  <option value="customer_services">Customer Services</option>
-                  <option value="food_services">Food Services</option>
-                  <option value="maintenance">Maintenance/Janitorial</option>
-                  <option value="manufacturing">Manufacturing</option>
-                  <option value="office_work">Office Work</option>
-                  <option value="online">Online Employment</option>
-                  <option value="transportation">Transportation</option>
-                </select>
-              </span>
-            </td>
-            <td>
-              <button class="removebutton" onclick="revertJobType()">
-                <i class="remove-filter-button material-icons"> clear </i>
-              </button>
-            </td>
-          </table>
-        </td>
-        <td>
-          <table align="center" style="width:7%;height:100%">
-            <td>
-              <div class="drop-down">
-                <select id="educationTypeSelect" onclick="findJob()">
-                  <option value="education">Education</option>
-                  <option value="highSchool">Some High School</option>
-                  <option value="diploma">High School Diploma</option>
-                  <option value="college">College Degree</option>
-                </select>
-              </div>
-            </td>
-            <td>
-              <button class="removebutton" onclick="revertEducationType()">
-                <i class="remove-filter-button material-icons"> clear </i>
-              </button>
-            </td>
-          </table>
-        </td>
-      </tr>
-    </table>
-  <!--</table>-->
-</div>
-<div class="spacing"></div>
-  <div class="job construction highSchool">
-    <div class="Title">Construction Job</div>
-    <div class="Location">60201</div>
-    <div class="Education">Some High School</div>
-    <div class="Description">Responsible for assisting tradesman on construction sites such as carpenters, bricklayers, demolition experts, drywallers, cement finishers, and roofers. Unloads and loads materials, erects concrete forms and ramps, mix and pour materials such as concrete, and assists in drilling and blasting.</div>
-
-  </div>
-  <div class="job construction highSchool">
-    <div class="Title">General Construction Worker</div>
-    <div class="Location">60115</div>
-    <div class="Education">Some High School</div>
-    <div class="Description">Clean and prepare construction sites by removing debris, garbage, and trees. Load and unload building materials. Operate large powered machinery and equipment (e.g., saws, drills, grinders, blowtorches, pressure cleaners, jackhammers).</div>
-    
-  </div>
-  <div class="job manufacturing diploma">
-    <div class="Title">Manufacturing Production Technician</div>
-    <div class="Location">60091</div>
-    <div class="Education">High School Diploma</div>
-    <div class="Description">Set up, test, and adjust manufacturing machinery or equipment, using any combination of electrical, electronic, mechanical, hydraulic, pneumatic, or computer technologies.</div>    
-  </div>
-  <div class="job transportation highSchool">
-    <div class="Title">Trucking</div>
-    <div class="Location">12345</div>
-    <div class="Education">Some High School</div>
-    <div class=" Description">Driving the vehicle is the main responsibility of the commercial truck driver, but some also need to load and unload cargo. Long-haul truck drivers must maintain a logbook of their driving activities to ensure compliance with federal regulations governing the rest and work periods for operators. Drivers also keep a record of vehicle inspections and make sure the truck is equipped with safety equipment, such as hazardous material placards. Some long-haul truck drivers plan their route according to a delivery schedule. Local-delivery drivers may be required to sell products or services to stores and businesses on their route, obtain signatures from recipients and collect cash.</div>
-    
-  </div>
-  <div class="job customer_services diploma">
-    <div class="Title">Customer Service Representative</div>
-    <div class="Location">60091</div>
-    <div class="Education">High School Diploma</div>
-    <div class="Description">Resolve customer complaints via phone, email, mail, or social media. Use telephones to reach out to customers and verify account information. Greet customers warmly and ascertain problem or reason for calling. Assist with placement of orders, refunds, or exchanges.</div>
-    
-  </div>
-  <div class="job food_services highSchool">
-    <div class="Title">Food Preparation Worker</div>
-    <div class="Location">60091</div>
-    <div class="Education">Some High School</div>
-    <div class="Description">Perform a variety of food preparation duties other than cooking, such as preparing cold foods and shellfish, slicing meat, and brewing coffee or tea.</div>
-    
-  </div>
-  <div class="job maintenance diploma">
-    <div class="Title">Custodian</div>
-    <div class="Location">60091</div>
-    <div class="Education">High School Diploma</div>
-    <div class="Description">Performs general cleaning and minor maintenance duties in maintaining library building, adjacent walks and grounds, and equipment in clean, orderly and functional condition. Provides assistance to staff, visitors and other employees as necessary.</div>
-    
-  </div>
-  <div class="job online diploma">
-    <div class="Title">Data Entry Operator</div>
-    <div class="Location">60091</div>
-    <div class="Education">High School Diploma</div>
-    <div class="Description">Data entry operator responsibilities include collecting and entering data in databases and maintaining accurate records of valuable company information. Our ideal candidate has essential data entry skills, like fast typing with an eye for detail and familiarity with spreadsheets and online forms. You will work with a data team and data manager. Previous experience as a data entry clerk or similar position will be considered an advantage.</div>
-    
-  </div>
-  <div class="job office_work college">
-    <div class="Title">Secretary</div>
-    <div class="Location">60091</div>
-    <div class="Education">Some College</div>
-    <div class="Description">Perform routine clerical and administrative functions such as drafting correspondence, scheduling appointments, organizing and maintaining paper and electronic files, or providing information to callers.</div>
-    
-  </div>
-
-
-
-  <span id="tag"></span>
-
-  <script src="jobs.js"></script>
 
 </body>
 </html>

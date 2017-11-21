@@ -78,7 +78,7 @@ body {
 
 
 /*.box{
-	padding-top:10px;
+  padding-top:10px;
   padding-bottom:10px;
   width:40%;
   margin: auto;
@@ -92,18 +92,18 @@ body {
 }
 */
 .box-container{
-	margin-left:10%;
+  margin-left:10%;
   margin-right:10%;
   font-family: "Open Sans", sans-serif;
 }
 
 
 .resourcetitle{
-	margin:5%;
-	margin-top: 10px;
-	/*font-family: "bitter";*/
-	font-size: 30px;
-	font-weight: bold;
+  margin:5%;
+  margin-top: 10px;
+  /*font-family: "bitter";*/
+  font-size: 30px;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
